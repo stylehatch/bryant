@@ -1,0 +1,13 @@
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
+
+name: Mikey Wills
+url: http://muke.me
+description: Where Idiots Come to Die
+twitter: mukealicious
+github: mukealicious
+gravatar_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
