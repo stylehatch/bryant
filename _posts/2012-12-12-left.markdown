@@ -5,7 +5,7 @@ category: posts
 type: text
 ---
 
-# Byron
+## Byron
 
 ### Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll).
 
