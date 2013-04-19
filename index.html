@@ -2,99 +2,102 @@
 layout: layout
 title: "Posts"
 ---
-<div class="container" id="main" role="main">
-  <!-- Posts -->
-  <div class="posts">
-    {% for post in site.posts %}
-    <!-- text post -->
-    {% if post.type == 'text' %}
-    <article class="text">
-      <header>
-        <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
-      </header>
-      <section>
-      {{ post.content }}
-    <!-- photo post -->
-    {% elsif post.type == 'photo' %}
-    <article class="photo">
-      <header>
-        <a href="{{ post.photo_url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  <a class="highres photo-link" href="{{ post.photo_url }}"></a>
-        <a href="{{ post.url }}" class="permalink-button photo-link">
-          <span class="icon-link"></span>
-          <strong>Permalink</strong>
-        </a>
-      </header>
-      <section>
-        <ul class="exif">
-          {% if post.camera %}
-          <li class="icon-camera">Camera: <strong>{{ post.camera }}</strong></li>
-          {% endif %}
-          {% if post.apeture %}
-          <li>Apeture: <strong>{{ post.apeture }}</strong></li>
-          {% endif %}
-          {% if post.exposure %}
-          <li>Exposure: <strong>{{ post.exposure }}</strong></li>
-          {% endif %}
-          {% if post.focal_length %}
-          <li>Focal: <strong>{{ post.focal_length }}</strong></li>
-          {% endif %}
-        </ul>
+<body class="index-page">
+  <div class="container" id="main" role="main">
+    <!-- Posts -->
+    <div class="posts">
+      {% for post in site.posts %}
+      <!-- text post -->
+      {% if post.type == 'text' %}
+      <article class="text">
+        <header>
+          <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
+        </header>
+        <section>
         {{ post.content }}
-    <!-- quote post -->
-    {% elsif post.type == 'quote' %}
-    <article class="quote">
-      <header>
-        <p><span class="quote_start">&ldquo;</span>{{ post.title }}<span class="quote_end">&rdquo;</span></p>
-      </header>
-      <section>
-        {% if post.source %}<p>{{ post.source }}</p>{% endif %}
+      <!-- photo post -->
+      {% elsif post.type == 'photo' %}
+      <article class="photo">
+        <header>
+          <a href="{{ post.photo_url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  <a class="highres photo-link" href="{{ post.photo_url }}"></a>
+          <a href="{{ post.url }}" class="permalink-button photo-link">
+            <span class="icon-link"></span>
+            <strong>Permalink</strong>
+          </a>
+        </header>
+        <section>
+          <ul class="exif">
+            {% if post.camera %}
+            <li class="icon-camera">Camera: <strong>{{ post.camera }}</strong></li>
+            {% endif %}
+            {% if post.apeture %}
+            <li>Apeture: <strong>{{ post.apeture }}</strong></li>
+            {% endif %}
+            {% if post.exposure %}
+            <li>Exposure: <strong>{{ post.exposure }}</strong></li>
+            {% endif %}
+            {% if post.focal_length %}
+            <li>Focal: <strong>{{ post.focal_length }}</strong></li>
+            {% endif %}
+          </ul>
+          {{ post.content }}
+      <!-- quote post -->
+      {% elsif post.type == 'quote' %}
+      <article class="quote">
+        <header>
+          <p><span class="quote_start">&ldquo;</span>{{ post.title }}<span class="quote_end">&rdquo;</span></p>
+        </header>
+        <section>
+          {% if post.source %}<p>{{ post.source }}</p>{% endif %}
+          {{ post.content }}
+      <!-- link post -->
+      {% elsif post.type == 'link' %}
+      <article class="link">
+        <header>
+          <h2><a href="{{ post.link }}"><span>{{ post.title }}</span></a></h2>
+        </header>
+        <section>
+          {{ post.content }}
+      <!-- audio post -->
+      {% elsif post.type == 'audio' %}
+      <article class="audio">
+        <header>
+            <div class="audio-embed">{{ post.embed_code }}</div>
+        </header>
+        <section>
+          <div class="caption">
+              {{ post.content }}
+          </div>
+      <!-- video post -->
+      {% elsif post.type == 'video' %}
+      <article class="video">
+        <header>
+          {{ post.embed_code }}
+        </header>
+        <section>
+          {{ post.content }}
+      <!-- any other post -->
+      {% else %}
+      <article class="text">
+        <header>
+          <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
+        </header>
+        <section>
         {{ post.content }}
-    <!-- link post -->
-    {% elsif post.type == 'link' %}
-    <article class="link">
-      <header>
-        <h2><a href="{{ post.link }}"><span>{{ post.title }}</span></a></h2>
-      </header>
-      <section>
-        {{ post.content }}
-    <!-- audio post -->
-    {% elsif post.type == 'audio' %}
-    <article class="audio">
-      <header>
-          <div class="audio-embed">{{ post.embed_code }}</div>
-      </header>
-      <section>
-        <div class="caption">
-            {{ post.content }}
-        </div>
-    <!-- video post -->
-    {% elsif post.type == 'video' %}
-    <article class="video">
-      <header>
-        {{ post.embed_code }}
-      </header>
-      <section>
-        {{ post.content }}
-    <!-- any other post -->
-    {% else %}
-    <article class="text">
-      <header>
-        <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
-      </header>
-      <section>
-      {{ post.content }}
-    {% endif %}
-      <!-- post footer -->
-      </section>
-      <footer>
-        <ul class="meta">
-          <li class="time"><a href="{{ post.url }}" class="icon-timeago">{{ post.date | date_to_string }}</a></li>
-          {% if page.disqus_id %}
-          <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
-          {% endif %}
-        </ul>
-      </footer>
-    </article>
-    {% endfor %}
+      {% endif %}
+        <!-- post footer -->
+        </section>
+        <footer>
+          <ul class="meta">
+            <li class="time"><a href="{{ post.url }}" class="icon-timeago">{{ post.date | date_to_string }}</a></li>
+            {% if page.disqus_id %}
+            <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
+            {% endif %}
+          </ul>
+        </footer>
+      </article>
+      {% endfor %}
+    </div>
+    <!-- end posts -->
   </div>
-  <!-- end posts -->
+</body>

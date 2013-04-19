@@ -1,35 +1,138 @@
 ---
 layout: layout
 ---
+<body class="permalink-page">
+  <div class="container" id="main" role="main">
+    {% if page.type == 'text' %}
+    <article class="text">
+      <header>
+        <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+      </header>
+      <section>
+      {{ content }}
+    <!-- photo post -->
+    {% elsif page.type == 'photo' %}
+    <article class="photo">
+      <header>
+        <a href="{{ page.photo_url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  <a class="highres photo-link" href="{{ page.photo_url }}"></a>
+        <a href="{{ page.url }}" class="permalink-button photo-link">
+          <span class="icon-link"></span>
+          <strong>Permalink</strong>
+        </a>
+      </header>
+      <section>
+        <ul class="exif">
+          {% if page.camera %}
+          <li class="icon-camera">Camera: <strong>{{ page.camera }}</strong></li>
+          {% endif %}
+          {% if page.apeture %}
+          <li>Apeture: <strong>{{ page.apeture }}</strong></li>
+          {% endif %}
+          {% if page.exposure %}
+          <li>Exposure: <strong>{{ page.exposure }}</strong></li>
+          {% endif %}
+          {% if page.focal_length %}
+          <li>Focal: <strong>{{ page.focal_length }}</strong></li>
+          {% endif %}
+        </ul>
+        {{ content }}
+    <!-- quote post -->
+    {% elsif page.type == 'quote' %}
+    <article class="quote">
+      <header>
+        <p><span class="quote_start">&ldquo;</span>{{ page.title }}<span class="quote_end">&rdquo;</span></p>
+      </header>
+      <section>
+        {% if page.source %}<p>{{ page.source }}</p>{% endif %}
+        {{ content }}
+    <!-- link post -->
+    {% elsif page.type == 'link' %}
+    <article class="link">
+      <header>
+        <h2><a href="{{ page.link }}"><span>{{ page.title }}</span></a></h2>
+      </header>
+      <section>
+        {{ content }}
+    <!-- audio post -->
+    {% elsif page.type == 'audio' %}
+    <article class="audio">
+      <header>
+          <div class="audio-embed">{{ page.embed_code }}</div>
+      </header>
+      <section>
+        <div class="caption">
+            {{ content }}
+        </div>
+    <!-- video post -->
+    {% elsif page.type == 'video' %}
+    <article class="video">
+      <header>
+        {{ page.embed_code }}
+      </header>
+      <section>
+        {{ content }}
+    <!-- any other post -->
+    {% else %}
+    <article class="text">
+      <header>
+        <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+      </header>
+      <section>
+      {{ content }}
+    {% endif %}
+      <!-- post footer -->
+      </section>
+      <footer>
+        <ul class="meta">
+          <li class="time"><a href="{{ page.url }}" class="icon-timeago">{{ page.date | date_to_string }}</a></li>
+          {% if page.disqus_id %}
+          <li class="comments"><a href="{{ page.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
+          {% endif %}
+        </ul>
+        <div class="share-buttons"></div>
+        {% if page.disqus_id %}
+        <div class="comments">
+          <!-- Begin Disqus -->
+          <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              var disqus_identifier = {PostID};
+              var disqus_config = function () {
+                  var config = this;
+                  config.callbacks.onReady.push(function () {  });
+                  config.callbacks.onNewComment.push(function () {  });
+              };
+            (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = 'http://{text:Disqus ID}.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus ID}">comments powered by Disqus.</a></noscript>
+          <!-- end Disqus -->
+        </div>
+        {% endif %}
+      </footer>
+    </article>
 
-<section class="content">
-  <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
+    <!-- TODO: bio here -->
+    <section class="meta">
+      <h3>Discussion, links, and tweets</h3>
+      <section class="copy">
+        <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+          <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
+        </a>
 
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
-  </section>
+        <p>
+          I'm a developer at GitHub. <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Follow me on Twitter</a>;
+          you'll enjoy my tweets. I take care to carefully craft each one. Or at least aim to make
+          you giggle. Or offended. One of those two&mdash; I haven't decided which yet.
+        </p>
 
-  {{ content }}
-
-  <!-- TODO: bio here -->
-  <section class="meta">
-    <h3>Discussion, links, and tweets</h3>
-    <section class="copy">
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
-        <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        I'm a developer at GitHub. <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Follow me on Twitter</a>;
-        you'll enjoy my tweets. I take care to carefully craft each one. Or at least aim to make
-        you giggle. Or offended. One of those two&mdash; I haven't decided which yet.
-      </p>
-
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
-      <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
+        <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
+        <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+      </section>
     </section>
-  </section>
-</section>
+  </div>
+</body>
