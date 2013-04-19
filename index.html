@@ -3,8 +3,10 @@ layout: layout
 title: "Posts"
 ---
 <div class="container" id="main" role="main">
+  <!-- Posts -->
   <div class="posts">
     {% for post in site.posts %}
+    <!-- text post -->
     {% if post.type == 'text' %}
     <article class="text">
       <header>
@@ -12,8 +14,8 @@ title: "Posts"
       </header>
       <section>
       {{ post.content }}
-    {% endif %}
-    {% if post.type == 'photo' %}
+    <!-- photo post -->
+    {% elsif post.type == 'photo' %}
     <article class="photo">
       <header>
         <a href="{{ post.photo_url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  <a class="highres photo-link" href="{{ post.photo_url }}"></a>
@@ -38,8 +40,8 @@ title: "Posts"
           {% endif %}
         </ul>
         {{ post.content }}
-    {% endif %}
-    {% if post.type == 'quote' %}
+    <!-- quote post -->
+    {% elsif post.type == 'quote' %}
     <article class="quote">
       <header>
         <p><span class="quote_start">&ldquo;</span>{{ post.title }}<span class="quote_end">&rdquo;</span></p>
@@ -47,16 +49,16 @@ title: "Posts"
       <section>
         {% if post.source %}<p>{{ post.source }}</p>{% endif %}
         {{ post.content }}
-    {% endif %}
-    {% if post.type == 'link' %}
+    <!-- link post -->
+    {% elsif post.type == 'link' %}
     <article class="link">
       <header>
         <h2><a href="{{ post.link }}"><span>{{ post.title }}</span></a></h2>
       </header>
       <section>
         {{ post.content }}
-    {% endif %}
-    {% if post.type == 'audio' %}
+    <!-- audio post -->
+    {% elsif post.type == 'audio' %}
     <article class="audio">
       <header>
           <div class="audio-embed">{{ post.embed_code }}</div>
@@ -65,16 +67,24 @@ title: "Posts"
         <div class="caption">
             {{ post.content }}
         </div>
-    {% endif %}
-    {% if post.type == 'video' %}
+    <!-- video post -->
+    {% elsif post.type == 'video' %}
     <article class="video">
       <header>
         {{ post.embed_code }}
       </header>
       <section>
         {{ post.content }}
+    <!-- any other post -->
+    {% else %}
+    <article class="text">
+      <header>
+        <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
+      </header>
+      <section>
+      {{ post.content }}
     {% endif %}
-
+      <!-- post footer -->
       </section>
       <footer>
         <ul class="meta">
@@ -87,3 +97,4 @@ title: "Posts"
     </article>
     {% endfor %}
   </div>
+  <!-- end posts -->
