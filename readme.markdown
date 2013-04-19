@@ -1,4 +1,5 @@
 # Byron
+### Blog Like a Hacker, In Style.
 
 Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll).
 

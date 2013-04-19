@@ -1,3 +1,4 @@
+# Jekyll Specific Stuff
 markdown: rdiscount
 pygments: true
 permalink: /posts/:title
@@ -5,9 +6,26 @@ auto: true
 rdiscount:
   extensions: [smart]
 
+# User Options
 name: Mikey Wills
 url: http://muke.me
 description: Where Idiots Come to Die
 twitter: mukealicious
 github: mukealicious
 gravatar_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
+
+# Color Options
+text_color: '#444444'
+accent_color: '#BADA55'
+hover_color: '#0e7c63'
+subtle_color: '#999999'
+title_color: '#222222'
+text_on_accent_color: '#ffffff'
+header_text_color: '#cefff4'
+header_accent_color: '#ffffff'
+header_title_color: '#ffffff'
+header_subtle_color: '#88e9d3'
+header_background: '#0e9879'
+post_background: '#ffffff'
+background: '#fcfcfc'
+

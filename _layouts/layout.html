@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <title>
@@ -12,14 +15,33 @@
   <meta name="author" content="{{ site.name }}" />
   <meta name="description" content="{{ site.description }}" />
 
+    <!--
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Byron - 1.0.0
+      Premium Jekyll Theme
+      https://github.com/stylehatch
+      Theme by: Style Hatch - http://stylehatch.co - @stylehatch 
+         _____ __        __        __  __      __       __
+        / ___// /___  __/ /__     / / / /___ _/ /______/ /_
+        \__ \/ __/ / / / / _ \   / /_/ / __ `/ __/ ___/ __ \
+       ___/ / /_/ /_/ / /  __/  / __  / /_/ / /_/ /__/ / / /
+      /____/\__/\__, /_/\___/  /_/ /_/\__,_/\__/\___/_/ /_/
+               /____/
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
   <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
-  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
-  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/batch.css" type="text/css" />
+  <!--[if IE]><link media="screen" type="text/css" href="stylesheets/spinner-old-ie.css" rel="stylesheet" /><![endif]-->
+<!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:700,700italic|PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  {% include options.html %}
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
