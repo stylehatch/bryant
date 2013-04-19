@@ -13,6 +13,32 @@ title: "Posts"
       <section>
       {{ post.content }}
     {% endif %}
+    {% if post.type == 'photo' %}
+    <article class="photo">
+      <header>
+        <a href="{{ post.photo_url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  <a class="highres photo-link" href="{{ post.photo_url }}"></a>
+        <a href="{{ post.url }}" class="permalink-button photo-link">
+          <span class="icon-link"></span>
+          <strong>Permalink</strong>
+        </a>
+      </header>
+      <section>
+        <ul class="exif">
+          {% if post.camera %}
+          <li class="icon-camera">Camera: <strong>{{ post.camera }}</strong></li>
+          {% endif %}
+          {% if post.apeture %}
+          <li>Apeture: <strong>{{ post.apeture }}</strong></li>
+          {% endif %}
+          {% if post.exposure %}
+          <li>Exposure: <strong>{{ post.exposure }}</strong></li>
+          {% endif %}
+          {% if post.focal_length %}
+          <li>Focal: <strong>{{ post.focal_length }}</strong></li>
+          {% endif %}
+        </ul>
+        {{ post.content }}
+    {% endif %}
       </section>
       <footer>
         <ul class="meta">
