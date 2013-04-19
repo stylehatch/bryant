@@ -62,11 +62,19 @@ title: "Posts"
           <div class="audio-embed">{{ post.embed_code }}</div>
       </header>
       <section>
-        <h2>{{ post.title }}</h2>
         <div class="caption">
             {{ post.content }}
         </div>
     {% endif %}
+    {% if post.type == 'video' %}
+    <article class="video">
+      <header>
+        {{ post.embed_code }}
+      </header>
+      <section>
+        {{ post.content }}
+    {% endif %}
+
       </section>
       <footer>
         <ul class="meta">
