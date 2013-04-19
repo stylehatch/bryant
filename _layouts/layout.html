@@ -47,33 +47,27 @@
   <script type="text/javascript" src="/js/application.js"></script>
 </head>
 
-<body>
-  <section class="sidebar">
-    <a href="/">
-      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
-    </a>
-
-    <section class="name">
-      <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
-      </a>
+<header class="site-info">
+  <div class="container">
+    <section class="description">
+      {% if site.gravatar_url %}
+      <a href="/" title="{{ site.name }} - Home" class="portrait-icon"><img src="{{ site.gravatar_url }}" alt="{{ site.name }}"></a>
+      {% endif %}
+      <h1><a href="/" title="{{ site.name }} - Home">{{ site.name }}</a></h1>
+      <p>{{ site.description }}</p>
     </section>
 
-    <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
-      <a href="/atom.xml"><img src="/images/rss.png" /></a>
-    </section>
-
-    <section class="sections">
+    <nav class="pages">
+      <a href="/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.gravatar_url }}" alt="{{ site.name }}"></a>
       <ul>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/">posts</a></li>
+        <li><a href="/about.html" title="about">About</a></li>
+        <li><a href="/" title="posts">Posts</a></li>
       </ul>
-    </section>
-  </section>
+    </nav>
+  </div>
+</header>
 
+<body>
   {{ content }}
 </body>
 
