@@ -39,6 +39,15 @@ title: "Posts"
         </ul>
         {{ post.content }}
     {% endif %}
+    {% if post.type == 'quote' %}
+    <article class="quote">
+      <header>
+        <p><span class="quote_start">&ldquo;</span>{{ post.title }}<span class="quote_end">&rdquo;</span></p>
+      </header>
+      <section>
+        {% if post.source %}<p>{{ post.source }}</p>{% endif %}
+        {{ post.content }}
+    {% endif %}
       </section>
       <footer>
         <ul class="meta">
