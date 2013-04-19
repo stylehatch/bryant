@@ -18,7 +18,8 @@
    }
   /* Subtle Icon Color */
    a.highres span:before, a.permalink-button span:before, a.highres:after, article footer a:before, article footer ul.meta li span:before, article.link header h2 a:after {
-     color: rgba({{ site.subtle_color }};, 0.6);
+     color: {{ site.subtle_color }};
+     opacity: 0.6;
    }
   /* Subtle Color Hover */
    a.highres span:hover:before, a.permalink-button span:hover:before, a.highres:hover:after, article footer a:hover:before, article footer ul.meta li span:hover:before, article.link header h2 a:hover:after {
@@ -34,7 +35,8 @@
    }
   /* Text On Accent Color */
    a.read-more.button:after, nav#pagination ul li.prev a:before, nav#pagination ul li.next a:after {
-     color: rgba({{ site.text_on_accent_color }}, 0.4);
+     color: {{ site.text_on_accent_color }}; 
+     opacity: 0.4;
    }
   /* Header Area */
   /* Header Title Color */
@@ -73,11 +75,12 @@
   /* Borders */
   /* subtleBorder */
    blockquote, article footer, article.photo h2:first-of-type, article.video h2:first-of-type, article.photoset h2:first-of-type, article.audio h2:first-of-type, article.text header, article.ask header, article.chat header, article.quote header, article.link header, body.permalink-page article div.notes {
-     border-color: rgba({{ site.subtle_color }}, 0.2);
+     border-color: {{ site.subtle_color }};
    }
   /* headerSubtleBorder */
    header.site-info nav.pages, footer.page-foot section.bottom {
-     border-color: rgba({{ site.header_subtle_color }}, 0.6);
+     border-color: {{ site.header_subtle_color }};
+     opacity: 0.6;
    }
 
   </style>
