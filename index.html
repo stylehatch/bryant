@@ -12,9 +12,16 @@ title: "Posts"
       </header>
       <section>
       {{ post.content }}
-      </section>
-    </article>
     {% endif %}
+      </section>
+      <footer>
+        <ul class="meta">
+          <li class="time"><a href="{{ post.url }}" class="icon-timeago">{{ post.date | date_to_string }}</a></li>
+          {% if page.disqus_id %}
+          <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
+          {% endif %}
+        </ul>
+      </footer>
+    </article>
     {% endfor %}
   </div>
-</div>
