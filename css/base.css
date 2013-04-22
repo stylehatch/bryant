@@ -251,7 +251,7 @@ header ul, footer ul, ul.credit { padding: 0; list-style: none; }
 .customize-audio embed { display: none; }
 
 .social-links ul { overflow: hidden; *zoom: 1; margin: 0.5em 0 0 0; }
-.social-links ul li { float: left; }
+.social-links ul li { float: left; margin-bottom:4px; }
 .social-links ul li a { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; display: block; width: 20px; height: 20px; margin: 0 2px; background-image: url(http://static.tumblr.com/fftf9xi/sHNma7afv/social_icons-black.png); background-repeat: no-repeat; opacity: .25; }
 .social-links ul li a br { display: none; }
 .social-links ul li a:hover { opacity: .8; }
