@@ -13,6 +13,7 @@ description: Where Idiots Come to Die
 twitter: mukealicious
 github: mukealicious
 gravatar_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
+disqus_id: 
 
 # Color Options
 text_color: '#444444'
@@ -29,3 +30,40 @@ header_background: '#0e9879'
 post_background: '#ffffff'
 background: '#fcfcfc'
 
+#Footer
+footer_title: About Mukey
+footer_description: Just killing time between meals.
+twitter_widget_embed: 
+instagram_access_token:
+##Social
+social_links_title: Picture Me Rollin
+twitter: mukealicious
+github_url: mukealicious
+behance_url: mukealicious
+cargo_url: mukealicious
+delicious_url: mukealicious
+dribbble_url: mukealicious
+etsy_url: mukealicious
+facebook_url: mukealicious
+ffffound_url: mukealicious
+flickr_url: mukealicious
+formspring_url: mukealicious
+forrst_url: mukealicious
+foursquare_url: mukealicious
+google_plus_url: mukealicious
+instagram_url: mukealicious
+lastfm_url: mukealicious
+linkedin_url: mukealicious
+pinterest_url: mukealicious
+quora_url: mukealicious
+rdio_url: mukealicious
+skype_url: mukealicious
+slideshare_url: mukealicious
+soundcloud_url: mukealicious
+spotify_url: mukealicious
+stumble_upon_url: mukealicious
+twitter_url: mukealicious
+vimeo_url: mukealicious
+website_url: mukealicious
+youtube_url: mukealicious
+email: mikey@muke.me
