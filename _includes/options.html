@@ -82,4 +82,23 @@
      border-color: {{ site.header_subtle_border }};
    }
 
+/* if posts have background color set */
+   {% if site.post_background %}
+   article {
+     background-color: {{ site.post_background }};
+   }
+   article.photo header, article.video header, article.photoset header, article.audio header {
+     margin-top: 0em;
+   }
+   article {
+     padding-bottom: 0;
+   }
+   hr {
+     visibility: hidden;
+   }
+   div.comments {
+     background-color: {{ site.post_background }};
+   }
+   {% endif %}
+
   </style>
