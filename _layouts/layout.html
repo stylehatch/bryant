@@ -44,7 +44,24 @@
   {% include options.html %}
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/application.js"></script>
+  <script type="text/javascript">
+  var StyleHatch = window.StyleHatch || {};
+  StyleHatch.twitterUser = "stylehatch";
+  StyleHatch.tweetCount = 1;
+  StyleHatch.flickrID = "8431599@N04";
+  StyleHatch.clickyID = "";
+  StyleHatch.googleID = "";
+  StyleHatch.disqusID = "juuvy";
+  StyleHatch.typekitID = "";
+  StyleHatch.accentColor = "#e97052";
+  if(top===self) {
+    StyleHatch.customizeMode=false;
+  } else if (top.location.hostname.toString()=="www.tumblr.com") {
+    StyleHatch.customizeMode=true;
+  } else {
+    StyleHatch.customizeMode=false;
+  }
+  </script>
 </head>
 
 <header class="site-info">
@@ -70,5 +87,7 @@
   {{ content }}
 
 {% include footer.html %}
+
+  <script type="text/javascript" src="/js/application.js"></script>
 
 </html>
