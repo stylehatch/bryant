@@ -77,8 +77,17 @@
     <nav class="pages">
       <a href="/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.gravatar_url }}" alt="{{ site.name }}"></a>
       <ul>
-        <li><a href="/about.html" title="about">About</a></li>
-        <li><a href="/" title="posts">Posts</a></li>
+      {% for weight in (1..10) %}
+        {% for p in site.pages %}
+          {% if p.weight == weight %}
+            <li>
+              <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+                {{ p.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
       </ul>
     </nav>
   </div>
