@@ -1,9 +1,14 @@
-# Byron
-### Blog Like a Hacker, In Style.
+---
+layout: page
+title: "Readme"
+weight: 4
+---
 
-Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll).
+## Blog Like a Hacker, In Style.
 
-Description here.
+Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll). It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
+
+When we set out to create Byron we had long-form writings, essays and beautiful photography in mind.  Every post type has been thoughtfully crafted to create one Style Hatch’s most versatile premium themes yet. 
 
 ## Installation
 
@@ -17,7 +22,7 @@ You should have a server up and running locally at <http://localhost:4000>.
 ## Customization
 
 Next you'll want to change a few things. Most of them can be changed directly in
-[_config.yml](#). That's where we'll pull your name, Twitter username, and things like that.
+[_config.yml](#). That's where we'll pull your name, Twitter username, color variables, and things like that.
 
 There's a few other places that you'll want to change, too:
 
@@ -31,6 +36,33 @@ There's a few other places that you'll want to change, too:
 - [apple-touch-icon.png](#):
   Again, this is my gravatar, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
+
+## Adding Posts
+There are currently 6 supported post types in this theme.
+
+- Text
+- Photo
+- Quote
+- Link
+- Audio
+- Video
+
+These are defined in the posts YAML front matter such as 
+  
+    type: text 
+
+These types affect how the post is rendered. Some post types have extra post specific front matter like `photo_url` or `link`. You can see how they work in the example posts for each type.
+
+## Adding Pages
+All HTML or Markdown files with YAML front matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front matter.
+
+    ---
+    layout: page
+    title: "title"
+    weight: 3
+    ---
+
+Weight is used to determine the order within the navigation items (1-10).
 
 ## Deployment
 
