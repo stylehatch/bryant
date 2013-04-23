@@ -32,40 +32,9 @@ header_title_color: '#ffffff'
 header_subtle_color: '#597790'
 header_subtle_border: '#597790'
 background: '#fcfcfc'
-post_background: 
+post_background:
 
 # Footer
 footer_title: About Mukey
-footer_description: Just killing time between meals.
+footer_description: 'A designer based out of Orange County, CA. Front end developer at Style Hatch. Just killing time between meals.'
 instagram_access_token:
-# Social
-social_links_title: Picture Me Rollin
-github_url: http://github.com/mukealicious
-behance_url: 
-cargo_url: 
-delicious_url: 
-dribbble_url: 
-etsy_url: 
-facebook_url: 
-ffffound_url: 
-flickr_url: 
-formspring_url: 
-forrst_url: 
-foursquare_url: 
-google_plus_url: 
-instagram_url: 
-lastfm_url: 
-linkedin_url: 
-pinterest_url: 
-quora_url: 
-rdio_url: 
-skype_url: 
-slideshare_url: 
-soundcloud_url: 
-spotify_url: 
-stumble_upon_url: 
-twitter_url: 
-vimeo_url: 
-website_url: 
-youtube_url: 
-email: mikey@muke.me

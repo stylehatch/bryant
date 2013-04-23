@@ -4,48 +4,9 @@
     <section class="description">
       {% if site.footer_title %}<h3>{{ site.footer_title }}</h3>{% endif %}
       {% if site.footer_description %}<p>{{ site.footer_description }}</p>{% endif %}
-    </section>
-    <section class="social-links">
-      {% if site.social_links_title %}<h4>{{ site.social_links_title }}</h4>{% endif %}
       {% if site.twitter %}
       <a href="https://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @{{ site.twitter }}</a>
       {% endif %}
-      {% if site.twitter_widget_embed %}
-
-        {{ site.twitter_widget_embed }}
-
-      {% endif %}
-      <ul>
-        {% if site.behance_url %}<li class="social_behance"><a href="{{ site.behance_url }}" class="ir">Behance</a></li>{% endif %}
-        {% if site.cargo_url %}<li class="social_cargo"><a href="{{ site.cargo_url }}" class="ir">Cargo</a></li>{% endif %}
-        {% if site.delicious_url %}<li class="social_delicious"><a href="{{ site.delicious_url }}" class="ir">Delicious</a></li>{% endif %}
-        {% if site.dribbble_url %}<li class="social_dribbble"><a href="{{ site.dribbble_url }}" class="ir">Dribbble</a></li>{% endif %}
-        {% if site.etsy_url %}<li class="social_etsy"><a href="{{ site.etsy_url }}" class="ir">Etsy</a></li>{% endif %}
-        {% if site.facebook_url %}<li class="social_facebook"><a href="{{ site.facebook_url }}" class="ir">Facebook</a></li>{% endif %}
-        {% if site.ffffound_url %}<li class="social_ffffound"><a href="{{ site.ffffound_url }}" class="ir">FFFFound</a></li>{% endif %}
-        {% if site.flickr_url %}<li class="social_flickr"><a href="{{ site.flickr_url }}" class="ir">Flickr</a></li>{% endif %}
-        {% if site.formspring_url %}<li class="social_formspring"><a href="{{ site.formspring_url }}" class="ir">Formspring</a></li>{% endif %}
-        {% if site.forrst_url %}<li class="social_forrst"><a href="{{ site.forrst_url }}" class="ir">Forrst</a></li>{% endif %}
-        {% if site.foursquare_url %}<li class="social_foursquare"><a href="{{ site.foursquare_url }}" class="ir">Foursquare</a></li>{% endif %}
-        {% if site.github_url %}<li class="social_github"><a href="{{ site.github_url }}" class="ir">Github</a></li>{% endif %}
-        {% if site.google_plus_url %}<li class="social_google"><a href="{{ site.google_plus_url }}" class="ir">Google Plus</a></li>{% endif %}
-        {% if site.instagram_url %}<li class="social_instagram"><a href="{{ site.instagram_url }}" class="ir">Instagram</a></li>{% endif %}
-        {% if site.lastfm_url %}<li class="social_lastfm"><a href="{{ site.lastfm_url }}" class="ir">LastFM</a></li>{% endif %}
-        {% if site.linkedin_url %}<li class="social_linkedin"><a href="{{ site.linkedin_url }}" class="ir">Linkedin</a></li>{% endif %}
-        {% if site.pinterest_url %}<li class="social_pinterest"><a href="{{ site.pinterest_url }}" class="ir">Pinterest</a></li>{% endif %}
-        {% if site.quora_url %}<li class="social_quora"><a href="{{ site.quora_url }}" class="ir">Quora</a></li>{% endif %}
-        {% if site.rdio_url %}<li class="social_rdio"><a href="{{ site.rdio_url }}" class="ir">Rdio</a></li>{% endif %}
-        {% if site.skype_url %}<li class="social_skype"><a href="{{ site.skype_url }}" class="ir">Skype</a></li>{% endif %}
-        {% if site.slideshare_url %}<li class="social_slideshare"><a href="{{ site.slideshare_url }}" class="ir">Slideshare</a></li>{% endif %}
-        {% if site.soundcloud_url %}<li class="social_soundcloud"><a href="{{ site.soundcloud_url }}" class="ir">Soundcloud</a></li>{% endif %}
-        {% if site.spotify_url %}<li class="social_spotify"><a href="{{ site.spotify_url }}" class="ir">Spotify</a></li>{% endif %}
-        {% if site.stumble_upon_url %}<li class="social_stumbledupon"><a href="{{ site.stumble_upon_url }}" class="ir">Stumbled</a></li>{% endif %}
-        {% if site.twitter_url %}<li class="social_twitter"><a href="{{ site.twitter_url }}" class="ir">Twitter</a></li>{% endif %}
-        {% if site.vimeo_url %}<li class="social_vimeo"><a href="{{ site.vimeo_url }}" class="ir">Vimeo</a></li>{% endif %}
-        {% if site.website_url %}<li class="social_website"><a href="{{ site.website_url }}" class="ir">Website</a></li>{% endif %}
-        {% if site.youtube_url %}<li class="social_youtube"><a href="{{ site.youtube_url }}" class="ir">YouTube</a></li>{% endif %}
-        {% if site.email %}<li class="social_email"><a href="mailto:{{ site.email }}" class="ir">Email Address</a></li>{% endif %}
-      </ul>
     </section>
 
     {% if site.instagram_access_token %}
