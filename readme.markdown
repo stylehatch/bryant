@@ -8,6 +8,8 @@ weight: 4
 
 Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll). It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
 
+![Byron Demo](/images/byron-demo-stage.png)
+
 When we set out to create Byron we had long-form writings, essays and beautiful photography in mind.  Every post type has been thoughtfully crafted to create one Style Hatch’s most versatile premium themes yet. 
 
 ## Installation
