@@ -1,7 +1,7 @@
   <style type="text/css">
 /* COLORS */
   /* Text Color */
-  body, header.site-info ul.util a:hover, article section ul.credit li.author a:hover, article footer a:hover, body.permalink-page article ul.credit li a:hover, body.permalink-page article ul.tags li a:hover, body.permalink-page article div.comments, body.permalink-page article div.notes {
+  body, article section ul.credit li.author a:hover, article footer a:hover, body.permalink-page article ul.credit li a:hover, body.permalink-page article ul.tags li a:hover, body.permalink-page article div.comments, body.permalink-page article div.notes {
      color: {{ site.text_color }};
    }
   /* Accent Color */
@@ -40,7 +40,7 @@
    }
   /* Header Area */
   /* Header Title Color */
-  header.site-info section.description h1 a, header.site-info nav.pages ul li a:hover, footer.page-foot section h1, footer.page-foot section h2, footer.page-foot section h3, footer.page-foot section h4, footer.page-foot section h5 {
+  header.site-info section.description h1 a, header.site-info a:hover, footer.page-foot a:hover, header.site-info ul.util a:hover, footer.page-foot section h1, footer.page-foot section h2, footer.page-foot section h3, footer.page-foot section h4, footer.page-foot section h5 {
     color: {{ site.header_title_color }};
   }
   /* Header Text Color */
@@ -60,7 +60,7 @@
     background-color: {{ site.subtle_border }};
   }
   /* Background */
-   body, a.highres, a.permalink-button {
+   body, header.site-fixed nav.pages, a.highres, a.permalink-button {
      background-color: {{ site.background }};
    }
   /* Header Background */
@@ -87,7 +87,7 @@
 
 /* if posts have background color set */
    {% if site.post_background %}
-   article {
+   article, header.site-fixed nav.pages {
      background-color: {{ site.post_background }};
    }
    article.photo header, article.video header, article.photoset header, article.audio header {
