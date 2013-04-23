@@ -3,6 +3,7 @@ markdown: rdiscount
 pygments: true
 permalink: /posts/:title
 auto: true
+paginate: 5 # the number of post per page
 rdiscount:
   extensions: [smart]
 
@@ -31,11 +32,11 @@ header_subtle_border: '#597790'
 background: '#fcfcfc'
 post_background: 
 
-#Footer
+# Footer
 footer_title: About Mukey
 footer_description: Just killing time between meals.
 instagram_access_token:
-#Social
+# Social
 social_links_title: Picture Me Rollin
 github_url: http://github.com/mukealicious
 behance_url: 

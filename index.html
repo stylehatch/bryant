@@ -1,13 +1,13 @@
 ---
 layout: layout
-title: "Posts"
+title: "index"
 weight: 1
 ---
 <body class="index-page">
   <div class="container" id="main" role="main">
     <!-- Posts -->
     <div class="posts">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
       <!-- text post -->
       {% if post.type == 'text' %}
       <article class="text">
@@ -100,5 +100,21 @@ weight: 1
       {% endfor %}
     </div>
     <!-- end posts -->
+    <div class="pagination">
+      <nav id="pagination">
+        <ul>
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+          <li class="prev active"><a href="/" class="previous button">Previous Page</a></li>
+          {% else %}
+          <li class="prev active"><a href="/page{{paginator.previous_page}}" class="previous button">Previous Page</a></li>
+          {% endif %}
+        {% endif %}
+        {% if paginator.next_page %}
+          <li class="next active"><a href="/page{{paginator.next_page}}" class="next button">Next Page</a></li>
+        {% endif %}
+        </ul>
+      </nav>
+    </div>
   </div>
 </body>
