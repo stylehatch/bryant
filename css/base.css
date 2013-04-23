@@ -609,3 +609,11 @@ ul.post-archive li h3 {
 ul.post-archive .date {
   float: right;
 }
+
+@media only screen and (max-width: 650px) {
+  ul.post-archive .date, ul.post-archive li h3 {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
