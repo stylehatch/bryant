@@ -14,7 +14,8 @@ layout: layout
     {% elsif page.type == 'photo' %}
     <article class="photo">
       <header>
-        <a href="{{ page.photo_url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  <a class="highres photo-link" href="{{ page.photo_url }}"></a>
+        <a href="{{ page.url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
+        <a class="highres photo-link" href="{{ page.photo_url }}">Zoom</a>
         <a href="{{ page.url }}" class="permalink-button photo-link">
           <span class="icon-link"></span>
           <strong>Permalink</strong>
