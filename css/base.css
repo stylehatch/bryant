@@ -580,3 +580,32 @@ body.permalink-page article ol.notes img { height: 36px; width: 36px; border-rad
 @media only screen and (max-width: 480px) { html { font-size: 0.88889em; line-height: 1.75em; }
   html * html { font-size: 112.5%; }
   html html { font-size: 18px; line-height: 1.55556em; } }
+
+/* Archive page */
+
+.archive-page ul.post-archive {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.post-archive li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 1em 0;
+}
+
+ul.post-archive a {
+  text-decoration: none;
+}
+
+ul.post-archive li h3 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+
+ul.post-archive .date {
+  float: right;
+}

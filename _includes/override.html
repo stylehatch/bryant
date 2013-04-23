@@ -5,7 +5,7 @@
      color: {{ site.text_color }};
    }
   /* Accent Color */
-   a {
+   a, ul.post-archive a:hover .title {
      color: {{ site.accent_color }};
    }
   /* Hover Color */
@@ -13,7 +13,7 @@
      color: {{ site.hover_color }};
    }
   /* Sublte Color */
-  header.site-fixed nav.pages ul li:after, a.highres, a.permalink-button, article section ul.credit, article section ul.credit li.author a, article footer, article footer a, article.chat strong, article.ask header div.asker-wrap p.asker, article.photo ul.exif, body.permalink-page article ul.credit, body.permalink-page article ul.tags, body.permalink-page article ul.credit li a, body.permalink-page article ul.tags li a {
+  header.site-fixed nav.pages ul li:after, a.highres, a.permalink-button, article section ul.credit, article section ul.credit li.author a, article footer, article footer a, article.chat strong, article.ask header div.asker-wrap p.asker, article.photo ul.exif, body.permalink-page article ul.credit, body.permalink-page article ul.tags, body.permalink-page article ul.credit li a, body.permalink-page article ul.tags li a, ul.post-archive .date {
      color: {{ site.subtle_color }};
    }
   /* Subtle Icon Color */
@@ -26,7 +26,7 @@
      color: {{ site.subtle_color }};
    }
   /* Title Color */
-   h1, article.photo h2:first-of-type, article.video h2:first-of-type, article.photoset h2:first-of-type, article.audio h2:first-of-type, article.text header h2, article.text header p, article.chat header h2, article.chat header p, article.quote header h2, article.quote header p, article.text header h2 a {
+   h1, article.photo h2:first-of-type, article.video h2:first-of-type, article.photoset h2:first-of-type, article.audio h2:first-of-type, article.text header h2, article.text header p, article.chat header h2, article.chat header p, article.quote header h2, article.quote header p, article.text header h2 a, ul.post-archive .title {
     color: {{ site.title_color }};
    }
   /* Text On Accent Color */
@@ -77,7 +77,7 @@
    }
   /* Borders */
   /* subtleBorder */
-   blockquote, article footer, article.photo h2:first-of-type, article.video h2:first-of-type, article.photoset h2:first-of-type, article.audio h2:first-of-type, article.text header, article.ask header, article.chat header, article.quote header, article.link header, body.permalink-page article div.notes {
+   blockquote, article footer, article.photo h2:first-of-type, article.video h2:first-of-type, article.photoset h2:first-of-type, article.audio h2:first-of-type, article.text header, article.ask header, article.chat header, article.quote header, article.link header, body.permalink-page article div.notes, ul.post-archive li {
      border-color: {{ site.subtle_border }};
    }
   /* headerSubtleBorder */

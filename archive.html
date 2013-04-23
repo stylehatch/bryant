@@ -1,0 +1,18 @@
+---
+layout: layout
+title: "archive"
+---
+<body class="archive-page">
+  <div class="container" id="main" role="main">
+    <!-- Posts -->
+    <ul class="post-archive">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <li>
+        <h3 class="title">{{ post.title }}</h3>
+        <span class="date">{{ post.date | date_to_string }}</span>
+        </li>
+      </a>
+    {% endfor %}
+    </ul>
+  </div>
