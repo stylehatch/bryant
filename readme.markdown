@@ -44,10 +44,9 @@ There are currently 6 supported post types in this theme.
 
 - Text
 - Photo
+- Embed
 - Quote
 - Link
-- Audio
-- Video
 
 These are defined in the posts YAML front matter such as 
   

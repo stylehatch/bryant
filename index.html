@@ -60,18 +60,8 @@ weight: 1
         </header>
         <section>
           {{ post.content }}
-      <!-- audio post -->
-      {% elsif post.type == 'audio' %}
-      <article class="audio">
-        <header>
-            <div class="audio-embed">{{ post.embed_code }}</div>
-        </header>
-        <section>
-          <div class="caption">
-              {{ post.content }}
-          </div>
-      <!-- video post -->
-      {% elsif post.type == 'video' %}
+      <!-- embed post -->
+      {% elsif post.type == 'embed' %}
       <article class="video">
         <header>
           {{ post.embed_code }}

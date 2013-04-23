@@ -54,18 +54,8 @@ layout: layout
       </header>
       <section>
         {{ content }}
-    <!-- audio post -->
-    {% elsif page.type == 'audio' %}
-    <article class="audio">
-      <header>
-          <div class="audio-embed">{{ page.embed_code }}</div>
-      </header>
-      <section>
-        <div class="caption">
-            {{ content }}
-        </div>
-    <!-- video post -->
-    {% elsif page.type == 'video' %}
+    <!-- embed post -->
+    {% elsif page.type == 'embed' %}
     <article class="video">
       <header>
         {{ page.embed_code }}

@@ -2,7 +2,7 @@
 layout: post
 title: CVS Bangers
 category: posts
-type: audio
+type: embed
 embed_code: <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F87515856"></iframe>
 ---
 
