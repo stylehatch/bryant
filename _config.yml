@@ -16,18 +16,18 @@ disqus_id:
 
 # Color Options
 text_color: '#444444'
-accent_color: '#11af8c'
-hover_color: '#0e7c63'
+accent_color: '#d95e3f'
+hover_color: '#a7543f'
 subtle_color: '#999999'
 subtle_border: '#e9e9e9'
 title_color: '#222222'
 text_on_accent_color: '#ffffff'
-header_text_color: '#cefff4'
+header_background: '#385975'
+header_text_color: '#dfe6ec'
 header_accent_color: '#ffffff'
 header_title_color: '#ffffff'
-header_subtle_color: '#88e9d3'
-header_subtle_border: '#4acf9b'
-header_background: '#0e9879'
+header_subtle_color: '#597790'
+header_subtle_border: '#597790'
 background: '#fcfcfc'
 post_background: 
 
