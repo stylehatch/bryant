@@ -11,9 +11,11 @@ rdiscount:
 name: Mikey Wills
 url: http://muke.me
 description: Where Idiots Come to Die
+email: mikey@muke.me
 twitter: mukealicious
 gravatar_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
 disqus_id: 
+
 
 # Color Options
 text_color: '#444444'
