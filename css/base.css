@@ -610,6 +610,19 @@ ul.post-archive .date {
   float: right;
 }
 
+/* Pygments Code Blocks */
+div.highlight {
+  margin: 1.55556em 0;
+}
+
+/* Better styles for embedding GitHub Gists */
+.gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
+.gist pre{font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
+.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
+.gist-meta a{color:#26a !important;text-decoration:none}
+.gist-meta a:hover{color:#0e4071 !important}
+
+
 @media only screen and (max-width: 650px) {
   ul.post-archive .date, ul.post-archive li h3 {
     display: block;

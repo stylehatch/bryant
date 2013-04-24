@@ -76,31 +76,26 @@ layout: layout
       <footer>
         <ul class="meta">
           <li class="time"><a href="{{ page.url }}" class="icon-timeago">{{ page.date | date_to_string }}</a></li>
-          {% if page.disqus_id %}
+          {% if site.disqus_shortname %}
           <li class="comments"><a href="{{ page.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
           {% endif %}
         </ul>
-        {% if page.disqus_id %}
-        <div class="comments">
-          <!-- Begin Disqus -->
-          <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
-          <div id="disqus_thread"></div>
+        {% if site.disqus_shortname %}
+        <div id="disqus_thread" class="comments"></div>
+        <!-- Disqus Comments -->
           <script type="text/javascript">
-              var disqus_identifier = {PostID};
-              var disqus_config = function () {
-                  var config = this;
-                  config.callbacks.onReady.push(function () {  });
-                  config.callbacks.onNewComment.push(function () {  });
-              };
-            (function() {
-             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-             dsq.src = 'http://{text:Disqus ID}.disqus.com/embed.js';
-             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = '{{ site.disqus_shortname }}'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
           </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus ID}">comments powered by Disqus.</a></noscript>
-          <!-- end Disqus -->
-        </div>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         {% endif %}
       </footer>
     </article>

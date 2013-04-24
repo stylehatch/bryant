@@ -48,8 +48,8 @@
 <header class="site-info">
   <div class="container">
     <section class="description">
-      {% if site.gravatar_url %}
-      <a href="/" title="{{ site.name }} - Home" class="portrait-icon"><img src="{{ site.gravatar_url }}" alt="{{ site.name }}"></a>
+      {% if site.icon_url %}
+      <a href="/" title="{{ site.name }} - Home" class="portrait-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
       {% endif %}
       <h1><a href="/" title="{{ site.name }} - Home">{{ site.name }}</a></h1>
       <p>{{ site.description }}</p>
@@ -61,7 +61,7 @@
     </section>
 
     <nav class="pages">
-      <a href="/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.gravatar_url }}" alt="{{ site.name }}"></a>
+      <a href="/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
       <ul>
       <li>
         <a href="/">Home</a>

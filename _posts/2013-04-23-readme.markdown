@@ -52,19 +52,25 @@ There are currently 6 supported post types in this theme.
 - Video
 
 These are defined in the posts YAML front matter such as 
-  
-    type: text 
+
+{% highlight yaml %}
+---
+type: link
+---
+{% endhighlight %}
 
 These types affect how the post is rendered. Some post types have extra post specific front matter like `photo_url` or `link`. You can see how they work in the example posts for each type.
 
 ## Adding Pages
 All HTML or Markdown files with YAML front matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front matter.
 
-    ---
-    layout: page
-    title: "title"
-    weight: 3
-    ---
+{% highlight yaml %}
+---
+layout: page
+title: "title"
+weight: 3
+---
+{% endhighlight %}
 
 Weight is used to determine the order within the navigation items (1-10).
 
