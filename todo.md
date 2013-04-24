@@ -1,6 +1,5 @@
 #TODO
 
-- disqus integration
 - disqus commment count in footer
 - sticky footer?
 - clean up javascript file
