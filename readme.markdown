@@ -39,6 +39,8 @@ There's a few other places that you'll want to change, too:
   Again, this is my gravatar, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
 
+For custom CSS, there is an included override.css file for that purpose.
+
 ## Adding Posts
 There are currently 6 supported post types in this theme.
 
@@ -59,7 +61,7 @@ All HTML or Markdown files with YAML front matter will be parsed as individual p
 
     ---
     layout: page
-    title: "title"
+    title: "yourtitle"
     weight: 3
     ---
 
