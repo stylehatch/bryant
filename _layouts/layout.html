@@ -56,7 +56,9 @@
       <ul class="util">
         <li class="archive"><a href="/archive.html" class="icon-timeago">Archive</a></li>
         <li class="rss"><a href="/atom.xml" class="icon-rss">RSS</a></li>
+        {% if site.email %}
         <li class="ask"><a href="mailto:{{ site.email }}" class="icon-compose-4">Contact</a></li>
+        {% endif %}
       </ul>
     </section>
 
