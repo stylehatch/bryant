@@ -615,6 +615,12 @@ div.highlight {
   margin: 1.55556em 0;
 }
 
+p > code, li > code {
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  border-radius: 2px;
+}
+
 /* Better styles for embedding GitHub Gists */
 .gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
 .gist pre{font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
