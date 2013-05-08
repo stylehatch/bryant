@@ -46,12 +46,12 @@ There's a few other places that you'll want to change, too:
 For custom CSS, there is an included override.css file for that purpose.
 
 ## Adding Posts
-There are currently 5 supported post types in this theme. These are defined in the posts YAML front matter using the variable `type: `
+There are currently 5 supported post types in this theme. These are defined in the posts YAML front-matter using the variable `type: `
 
-These types affect how the post is rendered. Some post types have extra post specific front matter like `photo_url` or `link`. You can see how they work in the example posts for each type.
+These types affect how the post is rendered. Some post types have extra post specific front-matter like `photo_url` or `link`. You can see how they work in the example posts for each type.
 
 #### Text
-Example YAML front matter for this post type:
+Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
@@ -62,7 +62,7 @@ type: text
 {% endhighlight %}
 
 #### Photo
-Example YAML front matter for this post type:
+Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
@@ -78,7 +78,7 @@ focal_length: 300mm
 {% endhighlight %}
 
 #### Embed
-Example YAML front matter for this post type:
+Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
@@ -90,7 +90,7 @@ embed_code: <iframe src="http://player.vimeo.com/video/63773788?portrait=0&amp;b
 {% endhighlight %}
 
 #### Quote
-Example YAML front matter for this post type:
+Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
@@ -102,7 +102,7 @@ source: unknown
 {% endhighlight %}
 
 #### Link
-Example YAML front matter for this post type:
+Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
@@ -116,7 +116,7 @@ link: http://jonathanmoore.com/
 These are mostly specifc to the Byron Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
 
 ## Creating Pages
-All HTML or Markdown files with YAML front matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front matter.
+All HTML or Markdown files with YAML front-matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front-matter.
 
 {% highlight yaml %}
 ---
