@@ -2,7 +2,6 @@
 markdown: rdiscount
 pygments: true
 permalink: /posts/:title
-auto: true
 paginate: 10 # the number of post per page
 rdiscount:
   extensions: [smart]
