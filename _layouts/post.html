@@ -15,16 +15,16 @@ layout: layout
     <article class="photo">
       <header>
         <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
-        <a class="highres photo-link" href="{{ page.photo_url }}">Zoom</a>
+        <a class="highres photo-link etp-zoom" href="{{ page.photo_url }}">Zoom</a>
         <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="permalink-button photo-link">
-          <span class="icon-link"></span>
+          <span class="icon-link etp-permalink"></span>
           <strong>Permalink</strong>
         </a>
       </header>
       <section>
         <ul class="exif">
           {% if page.camera %}
-          <li class="icon-camera">Camera: <strong>{{ page.camera }}</strong></li>
+          <li class="etp-camera">Camera: <strong>{{ page.camera }}</strong></li>
           {% endif %}
           {% if page.apeture %}
           <li>Apeture: <strong>{{ page.apeture }}</strong></li>
@@ -75,10 +75,7 @@ layout: layout
       </section>
       <footer>
         <ul class="meta">
-          <li class="time"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="icon-timeago">{{ page.date | date_to_string }}</a></li>
-          {% if site.disqus_shortname %}
-          <li class="comments"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
-          {% endif %}
+        <li class="time"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="etp-timeago">{{ page.date | date_to_string }}</a></li>
         </ul>
       </footer>
       {% if site.disqus_shortname %}
