@@ -6,7 +6,7 @@ layout: layout
     {% if page.type == 'text' %}
     <article class="text">
       <header>
-        <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+        <h2><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}">{{ page.title }}</h2></a>
       </header>
       <section>
       {{ content }}
@@ -14,9 +14,9 @@ layout: layout
     {% elsif page.type == 'photo' %}
     <article class="photo">
       <header>
-        <a href="{{ page.url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
         <a class="highres photo-link" href="{{ page.photo_url }}">Zoom</a>
-        <a href="{{ page.url }}" class="permalink-button photo-link">
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="permalink-button photo-link">
           <span class="icon-link"></span>
           <strong>Permalink</strong>
         </a>
@@ -66,7 +66,7 @@ layout: layout
     {% else %}
     <article class="text">
       <header>
-        <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+        <h2><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}">{{ page.title }}</h2></a>
       </header>
       <section>
       {{ content }}
@@ -75,9 +75,9 @@ layout: layout
       </section>
       <footer>
         <ul class="meta">
-          <li class="time"><a href="{{ page.url }}" class="icon-timeago">{{ page.date | date_to_string }}</a></li>
+          <li class="time"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="icon-timeago">{{ page.date | date_to_string }}</a></li>
           {% if site.disqus_shortname %}
-          <li class="comments"><a href="{{ page.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
+          <li class="comments"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
           {% endif %}
         </ul>
         {% if site.disqus_shortname %}

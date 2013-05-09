@@ -8,7 +8,7 @@ rdiscount:
 
 # User Options
 name: Mikey Wills
-url: http://muke.me
+baseurl:   # Leave this blank unless you are using a directory other than the root directory (Do not use a trailing slash '/')
 description: Where Idiots Come to Die
 email: mikey@muke.me
 twitter: mukealicious

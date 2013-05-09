@@ -12,7 +12,7 @@ weight: 1
       {% if post.type == 'text' %}
       <article class="text">
         <header>
-          <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
+          <h2><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}">{{ post.title }}</h2></a>
         </header>
         <section>
         {{ post.content }}
@@ -20,9 +20,9 @@ weight: 1
       {% elsif post.type == 'photo' %}
       <article class="photo">
         <header>
-          <a href="{{ post.url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  
+          <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  
           <a class="highres photo-link etp-zoom" href="{{ post.photo_url }}">Zoom</a>
-          <a href="{{ post.url }}" class="permalink-button photo-link">
+          <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}" class="permalink-button photo-link">
             <span class="icon-link etp-permalink"></span>
             <strong>Permalink</strong>
           </a>
@@ -72,7 +72,7 @@ weight: 1
       {% else %}
       <article class="text">
         <header>
-          <h2><a href="{{ post.url }}">{{ post.title }}</h2></a>
+          <h2><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}">{{ post.title }}</h2></a>
         </header>
         <section>
         {{ post.content }}
@@ -81,9 +81,9 @@ weight: 1
         </section>
         <footer>
           <ul class="meta">
-            <li class="time"><a href="{{ post.url }}" class="etp-timeago">{{ post.date | date_to_string }}</a></li>
+            <li class="time"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}" class="etp-timeago">{{ post.date | date_to_string }}</a></li>
             {% if site.disqus_shortname %}
-            <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden etp-comments">&nbsp;</a></li>
+            <li class="comments"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden etp-comments">&nbsp;</a></li>
             {% endif %}
           </ul>
         </footer>
@@ -96,13 +96,13 @@ weight: 1
         <ul>
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
-          <li class="prev active"><a href="/" class="previous button etp-previous">Prev Page</a></li>
+          <li class="prev active"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/" class="previous button etp-previous">Prev Page</a></li>
           {% else %}
-          <li class="prev active"><a href="/page{{paginator.previous_page}}" class="previous button etp-previous">Prev Page</a></li>
+          <li class="prev active"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/page{{paginator.previous_page}}" class="previous button etp-previous">Prev Page</a></li>
           {% endif %}
         {% endif %}
         {% if paginator.next_page %}
-          <li class="next active"><a href="/page{{paginator.next_page}}" class="next button etp-next">Next Page</a></li>
+          <li class="next active"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/page{{paginator.next_page}}" class="next button etp-next">Next Page</a></li>
         {% endif %}
         </ul>
       </nav>

@@ -30,17 +30,17 @@
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     -->
 
-  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/atom.xml" />
 
-  <link rel="stylesheet" href="/css/icons.css" type="text/css" />
-  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="/css/override.css" type="text/css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/icons.css" type="text/css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/override.css" type="text/css" />
   <!--[if IE]><link media="screen" type="text/css" href="stylesheets/spinner-old-ie.css" rel="stylesheet" /><![endif]-->
 <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:700,700italic|PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png" />
 
   {% include override.html %}
 </head>
@@ -49,13 +49,13 @@
   <div class="container">
     <section class="description">
       {% if site.icon_url %}
-      <a href="/" title="{{ site.name }} - Home" class="portrait-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
+      <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/" title="{{ site.name }} - Home" class="portrait-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
       {% endif %}
-      <h1><a href="/" title="{{ site.name }} - Home">{{ site.name }}</a></h1>
+      <h1><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/" title="{{ site.name }} - Home">{{ site.name }}</a></h1>
       <p>{{ site.description }}</p>
       <ul class="util">
-        <li class="archive"><a href="/archive.html" class="etp-timeago">Archive</a></li>
-        <li class="rss"><a href="/atom.xml" class="etp-rss">RSS</a></li>
+        <li class="archive"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/archive.html" class="etp-timeago">Archive</a></li>
+        <li class="rss"><a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/atom.xml" class="etp-rss">RSS</a></li>
         {% if site.email %}
         <li class="ask"><a href="mailto:{{ site.email }}" class="etp-mail">Contact</a></li>
         {% endif %}
@@ -63,7 +63,7 @@
     </section>
 
     <nav class="pages">
-      <a href="/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
+      <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
       <ul>
       <li>
         <a href="/">Home</a>
@@ -73,7 +73,7 @@
           {% if p.weight == weight %}
             {% if p.title != 'index' %}
             <li>
-              <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+              <a {% if p.url == page.url %}class="active"{% endif %} href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ p.url }}">
                 {{ p.title }}
               </a>
             </li>
@@ -111,7 +111,7 @@
   }
   </script>
 
-  <script type="text/javascript" src="/js/plugins.min.js"></script>
-  <script type="text/javascript" src="/js/application.js"></script>
+  <script type="text/javascript" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/js/plugins.min.js"></script>
+  <script type="text/javascript" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/js/application.js"></script>
 
 </html>
