@@ -42,6 +42,9 @@
 
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png" />
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
   {% include override.html %}
 </head>
 
@@ -90,26 +93,6 @@
 
 {% include footer.html %}
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-  <script type="text/javascript">
-  var StyleHatch = window.StyleHatch || {};
-  StyleHatch.twitterUser = "stylehatch";
-  StyleHatch.tweetCount = 1;
-  StyleHatch.flickrID = "8431599@N04";
-  StyleHatch.clickyID = "";
-  StyleHatch.googleID = "";
-  StyleHatch.disqusID = "juuvy";
-  StyleHatch.typekitID = "";
-  StyleHatch.accentColor = "#e97052";
-  if(top===self) {
-    StyleHatch.customizeMode=false;
-  } else if (top.location.hostname.toString()=="www.tumblr.com") {
-    StyleHatch.customizeMode=true;
-  } else {
-    StyleHatch.customizeMode=false;
-  }
-  </script>
 
   <script type="text/javascript" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/js/plugins.min.js"></script>
   <script type="text/javascript" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/js/application.js"></script>
