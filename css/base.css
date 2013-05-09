@@ -379,7 +379,6 @@ header.site-info ul.util { font-size: 12px; padding: 0; margin-left: -8.11111em;
 @media only screen and (max-width: 705px) { header.site-info ul.util { margin-left: 0; margin-right: 0; } }
 header.site-info ul.util li { display: inline-block; margin-right: 1em; }
 header.site-info ul.util a { text-decoration: none; }
-header.site-info ul.util a:before { padding-right: 0.5em; }
 header.site-info section.description { text-align: center; padding-top: 3.11111em; }
 header.site-info section.description a.portrait-icon { border: 4px solid #fcfcfc; background-color: #fcfcfc; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px; -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px; box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px; }
 header.site-info section.description a.portrait-icon, header.site-info section.description a.portrait-icon img { display: block; margin: 0 auto; height: 120px; width: 120px; border-radius: 60px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
@@ -438,7 +437,6 @@ a.button:active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: n
 p.btn-wrap { height: 41px; }
 
 a.read-more.button { font-size: 12px; padding: 8px 12px 8px 14px; text-shadow: 1px 1px 0px rgba(68, 68, 68, 0.6); }
-a.read-more.button:after { font-family: 'Batch-Custom'; speak: none; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; content: "\e00c"; padding-left: 0.5em; font-size: 1.2em; position: relative; top: -1px; vertical-align: middle; }
 a.read-more.button:active { padding-bottom: 6px; }
 
 a.highres, a.permalink-button { font-size: 12px; line-height: 1; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; border-radius: 4px; position: absolute; bottom: 14px; right: 12px; opacity: 0; padding: 0.66667em 0.83333em 0.91667em 0.83333em; -webkit-box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; -moz-box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; -webkit-transition-duration: 0.1s; -moz-transition-duration: 0.1s; -o-transition-duration: 0.1s; transition-duration: 0.1s; -webkit-transition-property: box-shadow, padding; -moz-transition-property: box-shadow, padding; -o-transition-property: box-shadow, padding; transition-property: box-shadow, padding; }
@@ -448,16 +446,15 @@ a.highres strong, a.permalink-button strong { display: none; }
 a.permalink-button { padding-right: 0.7em; }
 
 a.highres { right: 52px; }
-a.highres:after { font-family: 'Batch-Custom'; speak: none; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; content: "\e009"; padding-left: 1em; position: relative; top: -1px; vertical-align: middle; }
 
 nav#pagination ul { margin-top: 0; padding: 0; text-align: center; margin-bottom: 3.11111em; }
 @media only screen and (max-width: 480px) { nav#pagination ul { margin-bottom: 0; } }
 nav#pagination ul li { display: inline-block; height: 41px; }
-nav#pagination ul li a:after, nav#pagination ul li a:before { font-family: 'Batch-Custom'; speak: none; font-size: 1.31em; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; position: relative; top: -2px; vertical-align: middle; }
+nav#pagination ul li a:after, nav#pagination ul li a:before { font-size: 3em; line-height: 0.35; position: relative; top: -2px; vertical-align: middle; }
 nav#pagination ul li.prev { margin-right: 0.5em; }
-nav#pagination ul li.prev a:before { content: "\e014"; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); padding-right: 0.5em; }
+nav#pagination ul li.prev a:before { padding-right: 0.1em; margin: 0; }
 nav#pagination ul li.next { margin-left: 0.5em; }
-nav#pagination ul li.next a:after { content: "\e00c"; padding-left: 0.5em; }
+nav#pagination ul li.next a:after { padding-left: 0.1em; margin: 0; }
 
 nav#infinite { text-align: center; }
 nav#infinite p { height: 41px; }
@@ -488,7 +485,7 @@ article footer { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; 
 @media only screen and (max-width: 480px) { article footer { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; margin-left: -1em; padding-left: 1em; margin-right: -1em; padding-right: 1em; } }
 article footer ul { font-size: 12px; line-height: 1.9; margin: 1.25em 0; }
 article footer a { text-decoration: none; }
-article footer a:before { padding-right: 0.5em; position: relative; top: 1px; }
+article footer a:before { position: relative; top: 1px; }
 article footer ul.meta li { display: inline-block; margin-left: 1em; float: right; text-transform: lowercase; }
 article footer ul.meta li.time { float: left; margin-left: 0; }
 article footer ul.meta li.like, article footer ul.meta li.reblog { line-height: 1.7; }
@@ -517,7 +514,7 @@ article.text header, article.chat header, article.quote header { text-align: cen
 article.text header h2 a { text-decoration: none; }
 
 article.link header h2 a { font-size: 0.75em; }
-article.link header h2 a:after { font-family: 'Batch-Custom'; speak: none; font-style: normal; font-weight: normal; line-height: 2em; -webkit-font-smoothing: antialiased; content: "\e012"; font-size: 0.75em; padding-left: 0.5em; float: right; }
+article.link header h2 a:after { font-family: "Entypo"; speak: none; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; content: "\E75A"; font-size: 1.5em; padding-left: 0.5em; float: right; }
 
 article.quote header p { font-size: 1.77778em; line-height: 1.75em; margin-top: 0.75em; font-family: "PT Sans", sans-serif; font-weight: 700; font-style: italic; margin-bottom: 0.25em; }
 @media only screen and (max-width: 480px) { article.quote header p { font-size: 1.33333em; line-height: 1.16667em; line-height: 1.3; } }

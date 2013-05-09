@@ -21,16 +21,16 @@ weight: 1
       <article class="photo">
         <header>
           <a href="{{ post.url }}"><img src="{{ post.photo_url }}" alt="{{ post.title }}" /></a>  
-          <a class="highres photo-link" href="{{ post.photo_url }}">Zoom</a>
+          <a class="highres photo-link etp-zoom" href="{{ post.photo_url }}">Zoom</a>
           <a href="{{ post.url }}" class="permalink-button photo-link">
-            <span class="icon-link"></span>
+            <span class="icon-link etp-permalink"></span>
             <strong>Permalink</strong>
           </a>
         </header>
         <section>
           <ul class="exif">
             {% if post.camera %}
-            <li class="icon-camera">Camera: <strong>{{ post.camera }}</strong></li>
+            <li class="etp-camera">Camera: <strong>{{ post.camera }}</strong></li>
             {% endif %}
             {% if post.apeture %}
             <li>Apeture: <strong>{{ post.apeture }}</strong></li>
@@ -81,9 +81,9 @@ weight: 1
         </section>
         <footer>
           <ul class="meta">
-            <li class="time"><a href="{{ post.url }}" class="icon-timeago">{{ post.date | date_to_string }}</a></li>
+            <li class="time"><a href="{{ post.url }}" class="etp-timeago">{{ post.date | date_to_string }}</a></li>
             {% if site.disqus_shortname %}
-            <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden icon-speech-bubble-left-2">&nbsp;</a></li>
+            <li class="comments"><a href="{{ post.url }}#disqus_thread" class="dsq-comment-count semihidden etp-comments">&nbsp;</a></li>
             {% endif %}
           </ul>
         </footer>
@@ -96,13 +96,13 @@ weight: 1
         <ul>
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
-          <li class="prev active"><a href="/" class="previous button">Prev Page</a></li>
+          <li class="prev active"><a href="/" class="previous button etp-previous">Prev Page</a></li>
           {% else %}
-          <li class="prev active"><a href="/page{{paginator.previous_page}}" class="previous button">Prev Page</a></li>
+          <li class="prev active"><a href="/page{{paginator.previous_page}}" class="previous button etp-previous">Prev Page</a></li>
           {% endif %}
         {% endif %}
         {% if paginator.next_page %}
-          <li class="next active"><a href="/page{{paginator.next_page}}" class="next button">Next Page</a></li>
+          <li class="next active"><a href="/page{{paginator.next_page}}" class="next button etp-next">Next Page</a></li>
         {% endif %}
         </ul>
       </nav>

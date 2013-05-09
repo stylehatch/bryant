@@ -145,4 +145,6 @@ For more, see the Jekyll's documentation on [deploying to GitHub Pages](http://j
 
 ## Thanks
 
+All icons are from Entypo pictograms by Daniel Bruce — [www.entypo.com](www.entypo.com)
+
 Shout out to [@holman](https://twitter.com/holman) for the great example of how to build a nice Jekyll theme like he's done with [Left](https://github.com/holman/left).
