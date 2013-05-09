@@ -250,46 +250,6 @@ header ul, footer ul, ul.credit { padding: 0; list-style: none; }
 
 .customize-audio embed { display: none; }
 
-.social-links ul { overflow: hidden; *zoom: 1; margin: 0.5em 0 0 0; }
-.social-links ul li { float: left; margin-bottom:4px; }
-.social-links ul li a { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; display: block; width: 20px; height: 20px; margin: 0 2px; background-image: url(http://static.tumblr.com/fftf9xi/sHNma7afv/social_icons-black.png); background-repeat: no-repeat; opacity: .25; }
-.social-links ul li a br { display: none; }
-.social-links ul li a:hover { opacity: .8; }
-.social-links ul li.social_behance a { background-position: 0 0; }
-.social-links ul li.social_cargo a { background-position: -20px 0; }
-.social-links ul li.social_delicious a { background-position: -40px 0; }
-.social-links ul li.social_digg a { background-position: -60px 0; }
-.social-links ul li.social_dribbble a { background-position: -80px 0; }
-.social-links ul li.social_ember a { background-position: -100px 0; }
-.social-links ul li.social_etsy a { background-position: -120px 0; }
-.social-links ul li.social_facebook a { background-position: -140px 0; }
-.social-links ul li.social_ffffound a { background-position: -160px 0; }
-.social-links ul li.social_flickr a { background-position: -180px 0; }
-.social-links ul li.social_gowalla a { background-position: -200px 0; }
-.social-links ul li.social_lastfm a { background-position: -220px 0; }
-.social-links ul li.social_linkedin a { background-position: -240px 0; }
-.social-links ul li.social_skype a { background-position: -260px 0; }
-.social-links ul li.social_slideshare a { background-position: -280px 0; }
-.social-links ul li.social_stumbledupon a { background-position: -300px 0; }
-.social-links ul li.social_twitter a { background-position: -320px 0; }
-.social-links ul li.social_vimeo a { background-position: -340px 0; }
-.social-links ul li.social_youtube a { background-position: -360px 0; }
-.social-links ul li.social_email a { background-position: -380px 0; }
-.social-links ul li.social_forrst a { background-position: -400px 0; }
-.social-links ul li.social_soundcloud a { background-position: -420px 0; }
-.social-links ul li.social_formspring a { background-position: -440px 0; }
-.social-links ul li.social_foursquare a { background-position: -460px 0; }
-.social-links ul li.social_deviantart a { background-position: -480px 0; }
-.social-links ul li.social_website a { background-position: -500px 0; }
-.social-links ul li.social_rdio a { background-position: -520px 0; }
-.social-links ul li.social_myspace a { background-position: -540px 0; }
-.social-links ul li.social_google a { background-position: -560px 0; }
-.social-links ul li.social_spotify a { background-position: -580px 0; }
-.social-links ul li.social_pinterest a { background-position: -600px 0; }
-.social-links ul li.social_github a { background-position: -620px 0; }
-.social-links ul li.social_quora a { background-position: -640px 0; }
-.social-links ul li.social_instagram a { background-position: -660px 0; }
-
 @-webkit-keyframes ui-spinner-rotate-right { 0% { -webkit-transform: rotate(0deg); }
   25% { -webkit-transform: rotate(180deg); }
   50% { -webkit-transform: rotate(180deg); }
@@ -406,8 +366,8 @@ header.site-fixed nav.pages ul li:after { content: ' \2022 '; margin-left: 0.5em
 header.site-fixed nav.pages ul li:last-child:after { content: none; }
 header.site-fixed nav.pages ul li a { text-decoration: none; text-transform: uppercase; font-weight: 700; }
 
-footer.page-foot { margin-top: 3.11111em; padding-top: 1.55556em; }
-footer.page-foot .iso section { width: 50%; float: left; padding: 0 10px; }
+footer.page-foot { margin-top: 3.11111em; padding-top: 1.55556em; text-align: center; }
+footer.page-foot .iso section { width: 100%; float: left; padding: 0; }
 @media only screen and (max-width: 705px) { footer.page-foot .iso section { width: 100%; } }
 footer.page-foot .iso.widget section.description { width: 100%; }
 footer.page-foot section { margin-bottom: 1em; }
@@ -419,16 +379,20 @@ footer.page-foot section iframe.twitter-timeline { width: 100%; }
 footer.page-foot section p.view-more { margin: 0; }
 footer.page-foot section a.btn { font-size: 12px; padding: 4px 10px; border-radius: 4px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; }
 footer.page-foot section.description p { font-style: italic; }
-footer.page-foot section.instagram ul { margin: 0; }
-footer.page-foot section.instagram ul li { display: inline-block; width: 22%; margin-right: 4%; }
-footer.page-foot section.instagram ul li:last-child { margin-right: 0; }
-footer.page-foot section.instagram ul li img { max-width: 100%; height: auto; border: 2px solid #fcfcfc; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; }
-footer.page-foot section.liked-posts #likes { font-size: 0.77778em; line-height: 2em; line-height: 1.5; margin: 0; padding: 0; }
-footer.page-foot section.liked-posts #likes p { margin: 0 0 1em 0; }
-footer.page-foot section.liked-posts #likes a.btn { font-size: 12px; }
-footer.page-foot section.liked-posts #likes li { width: 48%; float: left; }
-footer.page-foot section.liked-posts #likes li:first-child { margin-right: 4%; }
-footer.page-foot section.liked-posts #likes li img { max-width: 100%; width: 100%; height: auto; border: 2px solid #fcfcfc; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; box-shadow: rgba(0, 0, 0, 0.6) 0 1px 2px; }
+footer.page-foot section.social-links h4 {
+  margin: 0;
+}
+footer.page-foot section.social-links ul {
+  margin: 0 0 24px 0;
+}
+footer.page-foot section.social-links ul li {
+  display: inline-block;
+  height: 12px;
+}
+footer.page-foot section.social-links ul li a {
+  text-decoration: none;
+}
+
 
 /* ========================================================================== Modules ========================================================================== */
 a.button { font-size: 0.88889em; line-height: 1.75em; display: inline-block; line-height: 1; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; border-radius: 4px; position: relative; padding: 12px 20px 12px 20px; -webkit-box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; -moz-box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; box-shadow: 0 -4px 0 rgba(68, 68, 68, 0.4) inset; -webkit-transition-duration: 0.1s; -moz-transition-duration: 0.1s; -o-transition-duration: 0.1s; transition-duration: 0.1s; }

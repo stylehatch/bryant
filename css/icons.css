@@ -171,7 +171,7 @@
  *   you can use the generic selector below, but it's slower:
  *   [class*="ets-"]:before { */
 .ets-github:before, .ets-c-github:before, .ets-flickr:before, .ets-flickr:before, .ets-c-flickr:before, .ets-vimeo:before, .ets-c-vimeo:before, .ets-twitter:before, .ets-c-twitter:before, .ets-facebook:before, .ets-c-facebook:before, .ets-s-facebook:before, 
-.ets-google-plus:before, .ets-c-google-plus:before, .ets-pinterest:before, .ets-c-pinterest:before, .ets-tumblr:before, .ets-c-tumblr:before, .ets-linkedin:before, .ets-c-linkedin:before, .ets-bribbble:before, .ets-c-bribbble:before, 
+.ets-google-plus:before, .ets-c-google-plus:before, .ets-pinterest:before, .ets-c-pinterest:before, .ets-tumblr:before, .ets-c-tumblr:before, .ets-linkedin:before, .ets-c-linkedin:before, .ets-dribbble:before, .ets-c-dribbble:before, 
 .ets-stumbleupon:before, .ets-c-stumbleupon:before, .ets-lastfm:before, .ets-c-lastfm:before, .ets-rdio:before, .ets-c-rdio:before, .ets-spotify:before, .ets-c-spotify:before, .ets-qq:before, .ets-instagram:before, .ets-dropbox:before, .ets-evernote:before, 
 .ets-flattr:before, .ets-skype:before, .ets-c-skype:before, .ets-renren:before, .ets-sina-weibo:before, .ets-paypal:before, .ets-picasa:before, .ets-soundcloud:before, .ets-mixi:before, .ets-behance:before, .ets-google-circles:before, 
 .ets-hatena-bookmark:before, .ets-smashing:before {
@@ -241,10 +241,10 @@
 .ets-c-linkedin:before {
   content: "\F319"; }
 
-.ets-bribbble:before {
+.ets-dribbble:before {
   content: "\F31B"; }
 
-.ets-c-bribbble:before {
+.ets-c-dribbble:before {
   content: "\F31C"; }
 
 .ets-stumbleupon:before {
