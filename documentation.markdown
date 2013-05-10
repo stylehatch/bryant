@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Readme"
-weight: 4
+title: "Documentation"
+weight: 2
 ---
 
 ## Blog Like a Hacker, In Style.
