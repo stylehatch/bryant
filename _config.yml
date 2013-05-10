@@ -9,10 +9,10 @@ rdiscount:
 # User Options
 name: Mikey Wills
 baseurl:   # Leave this blank unless you are using a directory other than the root directory (Do not use a trailing slash '/')
-description: Where Idiots Come to Die
+description: "A designer based out of Orange County, CA. Front end developer at Style Hatch. Just killing time between meals."
 email: mikey@muke.me
 twitter: mukealicious
-icon_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
+icon_url: http://muke.me/images/mikeyface.png
 disqus_shortname: jekyllbyron
 
 # Color Options
@@ -25,7 +25,7 @@ title_color: '#222222'
 text_on_accent_color: '#ffffff'
 header_background: '#385975'
 header_text_color: '#dfe6ec'
-header_accent_color: '#ffffff'
+header_accent_color: '#d95e3f'
 header_title_color: '#ffffff'
 header_subtle_color: '#597790'
 header_subtle_border: '#597790'
@@ -34,21 +34,21 @@ post_background:
 
 # Footer
 footer_title: About Mukey
-footer_description: 'A designer based out of Orange County, CA. Front end developer at Style Hatch. Just killing time between meals.'
+footer_description: "I am a purpose driven designer with a passion for products. A realigner not a redesigner. I don't like making things pretty, I like making them better."
 social_links_title: Picture Me Rollin
-github_url: test
-flickr_url: test
-instagram_url: test
-vimeo_url: test
-facebook_url: test
-google_plus_url: test
-pinterest_url: test
-tumblr_url: test
-linkedin_url: test
-dribbble_url: test
-lastfm_url: test
-rdio_url: test
-spotify_url: test
-skype_url: test
-soundcloud_url: test
-behance_url: test
+github_url: https://github.com/Mukealicious
+flickr_url: 
+instagram_url: http://instagram.com/mukealicious
+vimeo_url: 
+facebook_url: 
+google_plus_url: https://plus.google.com/111592174684877854482/posts
+pinterest_url: 
+tumblr_url: 
+linkedin_url: 
+dribbble_url: http://dribbble.com/mukealicious
+lastfm_url: 
+rdio_url: http://www.rdio.com/people/Mukealicious/
+spotify_url: 
+skype_url: 
+soundcloud_url: 
+behance_url: 
