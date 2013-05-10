@@ -18,8 +18,8 @@ Setting up this theme is fairly simple, but if you aren't already familiar with 
 
 - Install Jekyll: `gem install jekyll`
 - Fork this repository
-- Clone it: `git clone https://github.com/YOUR-USER/YOUR-USER.github.io`
-- Run the Jekyll server: `jekyll --server`
+- Clone it: `git clone https://github.com/YOUR-USER/byron`
+- Run the Jekyll server: `jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
 
