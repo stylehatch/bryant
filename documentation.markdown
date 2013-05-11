@@ -112,6 +112,9 @@ link: http://stylehatch.co/
 ---
 {% endhighlight %}
 
+### Shortname
+For long post titles, there is an optional `shortname: ` variable that can be added to the YAML front-matter. If included on a post, the archive page will display the shortname instead of the full title. This is especially useful for long quote posts.
+
 These are mostly specifc to the Byron Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
 
 ## Creating Pages
