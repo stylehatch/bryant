@@ -36,11 +36,10 @@ There's a few other places that you'll want to change, too:
   this on GitHub Pages with a custom domain name, you'll want to change this
   to be the domain you're going to use. All that should be in here is a
   domain name on the first line and nothing else (like: `example.com`).
-- [favicon.ico](#): This
-  is a smaller version of my gravatar for use as the icon in your browser's
-  address bar. You should change it to whatever you'd like.
-- [apple-touch-icon.png](#):
-  Again, this is my gravatar, and it shows up in iOS and various other apps
+- [favicon.ico](#): 
+  This is the Style Hatch logo for displaying in the address bar. You should change it to whatever you'd like.
+- [apple-touch-icon.png](#): 
+  Again, this is the Style Hatch logo, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
 
 For custom CSS, there is an included override.css file for that purpose.
@@ -69,11 +68,11 @@ layout: post
 title: Photos Look Great
 category: posts
 type: photo
-photo_url: http://muke.me/images/mikeyzagprint.jpg
-camera: Pentax K200D
-apeture: f/11.0
-exposure: 1/180
-focal_length: 300mm
+photo_url: http://somesite.com/images/someimage.jpg
+camera: Fujifilm Finepix X100
+apeture: f/4
+exposure: 1/250th
+focal_length: 23mm
 ---
 {% endhighlight %}
 
@@ -94,10 +93,10 @@ Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
-title: You're Only Paranoid Until It's True
+title: There is nothing to writing. All you do is sit down at a typewriter and bleed.
 category: posts
 type: quote
-source: unknown
+source: Ernest Hemingway
 ---
 {% endhighlight %}
 
@@ -106,10 +105,10 @@ Example YAML front-matter for this post type:
 {% highlight yaml %}
 ---
 layout: post
-title: Jonathan Moore
+title: Style Hatch - Fresh Designs to Show Off Your Genius
 category: posts
 type: link
-link: http://jonathanmoore.com/
+link: http://stylehatch.co/
 ---
 {% endhighlight %}
 
