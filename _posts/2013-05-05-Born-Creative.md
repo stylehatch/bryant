@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Everyone is born creative; everyone is given a box of crayons in kindergarten. Then when you hit puberty they take the crayons away and replace them with dry, uninspiring books on algebra, history, etc. Being suddenly hit years later with the ‘creative bug’ is just a wee voice telling you, ‘I’d like my crayons back, please’.
+shortname: Born Creative
 category: posts
 type: quote
 source: Hugh MacLeod
