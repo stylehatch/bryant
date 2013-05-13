@@ -14,8 +14,8 @@ layout: layout
     {% elsif page.type == 'photo' %}
     <article class="photo">
       <header>
-        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}"><img src="{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
-        <a class="highres photo-link etp-zoom" href="{{ page.photo_url }}">Zoom</a>
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}"><img src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.photo_url }}" alt="{{ page.title }}" /></a>  
+        <a class="highres photo-link etp-zoom" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.photo_url }}">Zoom</a>
         <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="permalink-button photo-link">
           <span class="icon-link etp-permalink"></span>
           <strong>Permalink</strong>
