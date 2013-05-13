@@ -43,7 +43,7 @@ There's a few other places that you'll want to change, too:
   Again, this is the Style Hatch logo, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
 
-For custom CSS, there is an included override.css file for that purpose.
+For custom CSS, there is an included blank screen.css file for that purpose.
 
 ## Adding Posts
 There are currently 5 supported post types in this theme. These are defined in the posts YAML front-matter using the variable `type: `
