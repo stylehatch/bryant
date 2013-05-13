@@ -4,7 +4,8 @@ title: "Documentation"
 weight: 2
 ---
 
-###Bryant is A theme for [Jekyll](https://github.com/mojombo/jekyll) created with long-form writings, essays and beautiful photography in mind.
+#Bryant 
+A theme for [Jekyll](https://github.com/mojombo/jekyll) created with long-form writings, essays and beautiful photography in mind.
 
 ![Bryant Demo](/images/bryant-demo.png)
 
