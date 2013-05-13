@@ -7,13 +7,13 @@ rdiscount:
   extensions: [smart]
 
 # User Options
-name: Mikey Wills
+name: Byron
 baseurl:   # Leave this blank unless you are using a directory other than the root directory (Do not use a trailing slash '/')
-description: Where Idiots Come to Die
-email: mikey@muke.me
-twitter: mukealicious
-icon_url: http://gravatar.com/avatar/7f3afdc92cd5fb8bbdf12d8d33a88839
-disqus_shortname: jekyllbyron
+description: 'A Jekyll theme for long-form writings, essays and beautiful photography.'
+email: 
+twitter: 
+icon_url: 
+disqus_shortname: 
 
 # Color Options
 text_color: '#444444'
@@ -33,22 +33,22 @@ background: '#fcfcfc'
 post_background:
 
 # Footer
-footer_title: About Mukey
-footer_description: 'A designer based out of Orange County, CA. Front end developer at Style Hatch. Just killing time between meals.'
-social_links_title: Picture Me Rollin
-github_url: test
-flickr_url: test
-instagram_url: test
-vimeo_url: test
-facebook_url: test
-google_plus_url: test
-pinterest_url: test
-tumblr_url: test
-linkedin_url: test
-dribbble_url: test
-lastfm_url: test
-rdio_url: test
-spotify_url: test
-skype_url: test
-soundcloud_url: test
-behance_url: test
+footer_title: 
+footer_description: 
+social_links_title: 
+github_url: 
+flickr_url: 
+instagram_url: 
+vimeo_url: 
+facebook_url: 
+google_plus_url: 
+pinterest_url: 
+tumblr_url: 
+linkedin_url: 
+dribbble_url: 
+lastfm_url: 
+rdio_url: 
+spotify_url: 
+skype_url: 
+soundcloud_url: 
+behance_url: 

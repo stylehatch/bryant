@@ -1,9 +1,0 @@
----
-layout: post
-title: A Nice Gist
-category: posts
-type: embed
-embed_code: <script src="https://gist.github.com/anthonyshort/2028061.js"></script>
----
-
-Check out this gist
