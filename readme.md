@@ -5,6 +5,7 @@
 
 It is based off of one of our latest [premium themes](http://byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
 ####[See The Demo](http://stylehatch.github.io/bryant)
+All of the source code for the demo site is available for your reference in the [gh-pages branch](https://github.com/stylehatch/bryant/tree/gh-pages).
 
 ## Installation
 
@@ -128,8 +129,7 @@ Weight is used to determine the order within the navigation items (1-10).
 
 ## Deployment
 
-You should deploy with [GitHub Pages](http://pages.github.com)- it's just
-easier.
+You should deploy with [GitHub Pages](http://pages.github.com).
 
 All you should have to do is rename your repository on GitHub to be `username.github.io`. Content from the master branch of your repository will be used to build and publish the GitHub Pages site, so make sure your Jekyll site is stored there.
 
@@ -139,8 +139,14 @@ For more, see the Jekyll's documentation on [deploying to GitHub Pages](http://j
 
 ## Licensing
 
-## Thanks
+
+## Credits
+
+* [Jonathan Moore](http://github.com/jonathanmoore) - *[@moore](http://twitter.com/moore) | [jonathanmoore.com](http://jonathanmoore.com)*
+* [Mikey Wills](http://muke.me) - *[@mukealicious](https://twitter.com/mukealicious) | [muke.me](http://muke.me)*
 
 All icons are from Entypo pictograms by Daniel Bruce — [www.entypo.com](http://www.entypo.com)
+
+## Thanks
 
 Shout out to [@holman](https://twitter.com/holman) for the great example of how to build a nice Jekyll theme like he's done with [Left](https://github.com/holman/left).
