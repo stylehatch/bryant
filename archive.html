@@ -7,7 +7,7 @@ title: "archive"
     <!-- Posts -->
     <ul class="post-archive">
     {% for post in site.posts %}
-      <a href="{{ post.url }}" title="{{ post.title }}">
+      <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ post.url }}" title="{{ post.title }}">
         <li>
         <h3 class="title">{% if post.shortname %}{{ post.shortname }}{% else %}{{ post.title }}{% endif %}</h3>
         <span class="date">{{ post.date | date_to_string }}</span>
