@@ -1,9 +1,10 @@
 #Bryant
 ###A theme for [Jekyll](https://github.com/mojombo/jekyll) created with long-form writings, essays and beautiful photography in mind.
 
-![Bryant Demo](http://stylehatch.github.io/bryant/images/bryant-demo.png)
+[![Bryant Demo](http://stylehatch.github.io/bryant/images/bryant-demo.png)](http://stylehatch.github.io/bryant)
 
 It is based off of one of our latest [premium themes](http://byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
+####[See The Demo](http://stylehatch.github.io/bryant)
 
 ## Installation
 
