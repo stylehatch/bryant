@@ -6,11 +6,11 @@ weight: 2
 
 ## Blog Like a Hacker, In Style.
 
-Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll). It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
+Bryant is a theme for [Jekyll](https://github.com/mojombo/jekyll). It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
 
-![Byron Demo]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/images/byron-demo-stage.png)
+![Bryant Demo]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/images/bryant-demo.png)
 
-When we set out to create Byron we had long-form writings, essays and beautiful photography in mind.  Every post type has been thoughtfully crafted to create one Style Hatch’s most versatile premium themes yet. 
+When we set out to create Bryant we had long-form writings, essays and beautiful photography in mind.  Every post type has been thoughtfully crafted to create one Style Hatch’s most versatile premium themes yet. 
 
 ## Installation
 
@@ -18,7 +18,7 @@ Setting up this theme is fairly simple, but if you aren't already familiar with 
 
 - Install Jekyll: `gem install jekyll`
 - Fork this repository
-- Clone it: `git clone https://github.com/YOUR-USER/byron`
+- Clone it: `git clone https://github.com/YOUR-USER/bryant`
 - Run the Jekyll server: `jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
@@ -115,7 +115,7 @@ link: http://stylehatch.co/
 ### Shortname
 For long post titles, there is an optional `shortname: ` variable that can be added to the YAML front-matter. If included on a post, the archive page will display the shortname instead of the full title. This is especially useful for long quote posts.
 
-These are mostly specifc to the Byron Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
+These are mostly specifc to the Bryant Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
 
 ## Creating Pages
 All HTML or Markdown files with YAML front-matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front-matter.
