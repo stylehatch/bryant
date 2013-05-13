@@ -82,7 +82,7 @@
       <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/" title="{{ site.name }} - Home" class="portrait-icon user-icon"><img src="{{ site.icon_url }}" alt="{{ site.name }}"></a>
       <ul>
       <li>
-        <a href="/">Home</a>
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">Home</a>
       </li>
       {% for weight in (1..10) %}
         {% for p in site.pages %}
