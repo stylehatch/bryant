@@ -7,7 +7,7 @@ rdiscount:
   extensions: [smart]
 
 # User Options
-name: Byron
+name: Bryant
 baseurl:   # Leave this blank unless you are using a directory other than the root directory (Do not use a trailing slash '/')
 description: 'A Jekyll theme for long-form writings, essays and beautiful photography.'
 email: 

@@ -44,66 +44,66 @@ These types affect how the post is rendered. Some post types have extra post spe
 
 #### Text
 Example YAML front-matter for this post type:
-{% highlight yaml %}
----
-layout: post
-title: Blog Like a Hacker, In Style
-category: posts
-type: text
----
-{% endhighlight %}
+
+    ---
+    layout: post
+    title: Blog Like a Hacker, In Style
+    category: posts
+    type: text
+    ---
+
 
 #### Photo
 Example YAML front-matter for this post type:
-{% highlight yaml %}
----
-layout: post
-title: Photos Look Great
-category: posts
-type: photo
-photo_url: http://somesite.com/images/someimage.jpg
-camera: Fujifilm Finepix X100
-apeture: f/4
-exposure: 1/250th
-focal_length: 23mm
----
-{% endhighlight %}
+
+    ---
+    layout: post
+    title: Photos Look Great
+    category: posts
+    type: photo
+    photo_url: http://somesite.com/images/someimage.jpg
+    camera: Fujifilm Finepix X100
+    apeture: f/4
+    exposure: 1/250th
+    focal_length: 23mm
+    ---
+
 
 #### Embed
 Example YAML front-matter for this post type:
-{% highlight yaml %}
----
-layout: post
-title: Magnetic Magic
-category: posts
-type: embed
-embed_code: <iframe src="http://player.vimeo.com/video/63773788?portrait=0&amp;badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
----
-{% endhighlight %}
+
+    ---
+    layout: post
+    title: Magnetic Magic
+    category: posts
+    type: embed
+    embed_code: <iframe src="http://player.vimeo.com/video/63773788?portrait=0&amp;badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    ---
+
 
 #### Quote
 Example YAML front-matter for this post type:
-{% highlight yaml %}
----
-layout: post
-title: There is nothing to writing. All you do is sit down at a typewriter and bleed.
-category: posts
-type: quote
-source: Ernest Hemingway
----
-{% endhighlight %}
+
+    ---
+    layout: post
+    title: There is nothing to writing. All you do is sit down at a typewriter and bleed.
+    category: posts
+    type: quote
+    source: Ernest Hemingway
+    ---
+
 
 #### Link
 Example YAML front-matter for this post type:
-{% highlight yaml %}
----
-layout: post
-title: Style Hatch - Fresh Designs to Show Off Your Genius
-category: posts
-type: link
-link: http://stylehatch.co/
----
-{% endhighlight %}
+
+    ---
+    layout: post
+    title: Style Hatch - Fresh Designs to Show Off Your Genius
+    category: posts
+    type: link
+    link: http://stylehatch.co/
+    ---
+
 
 ### Shortname
 For long post titles, there is an optional `shortname: ` variable that can be added to the YAML front-matter. If included on a post, the archive page will display the shortname instead of the full title. This is especially useful for long quote posts.
@@ -113,13 +113,13 @@ These are mostly specifc to the Bryant Jekyll theme. See the Jekyll documentatio
 ## Creating Pages
 All HTML or Markdown files with YAML front-matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front-matter.
 
-{% highlight yaml %}
----
-layout: page
-title: your title
-weight: 3
----
-{% endhighlight %}
+
+    ---
+    layout: page
+    title: your title
+    weight: 3
+    ---
+
 
 Weight is used to determine the order within the navigation items (1-10).
 
