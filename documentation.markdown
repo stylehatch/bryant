@@ -9,7 +9,7 @@ A theme for [Jekyll](https://github.com/mojombo/jekyll) created with long-form w
 
 ![Bryant Demo](http://stylehatch.github.io/bryant/images/bryant-demo.png)
 
-It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
+It is based off of one of our latest [premium themes](http://byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
 
 ## Installation
 
@@ -146,6 +146,6 @@ For more, see the Jekyll's documentation on [deploying to GitHub Pages](http://j
 
 ## Thanks
 
-All icons are from Entypo pictograms by Daniel Bruce — [www.entypo.com](www.entypo.com)
+All icons are from Entypo pictograms by Daniel Bruce — [www.entypo.com](http://www.entypo.com)
 
 Shout out to [@holman](https://twitter.com/holman) for the great example of how to build a nice Jekyll theme like he's done with [Left](https://github.com/holman/left).
