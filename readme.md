@@ -1,18 +1,17 @@
-## Blog Like a Hacker, In Style.
+#Bryant
+###A theme for [Jekyll](https://github.com/mojombo/jekyll) created with long-form writings, essays and beautiful photography in mind.
 
-Byron is a theme for [Jekyll](https://github.com/mojombo/jekyll). It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
+![Bryant Demo](/images/bryant-demo.png)
 
-![Byron Demo]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/images/byron-demo-stage.png)
-
-When we set out to create Byron we had long-form writings, essays and beautiful photography in mind.  Every post type has been thoughtfully crafted to create one Style Hatch’s most versatile premium themes yet. 
+It is based off of one of our latest [premium themes](byron.stylehatch.co) for tumblr at [Stylehatch](http://stylehatch.co/). We're big fans of Jekyll and the open source community, so we are trying something new.
 
 ## Installation
 
 Setting up this theme is fairly simple, but if you aren't already familiar with Jekyll take some time to read through their [documentation](http://jekyllrb.com/docs/home/).
 
 - Install Jekyll: `gem install jekyll`
-- Fork this repository
-- Clone it: `git clone https://github.com/YOUR-USER/byron`
+- [Fork this repository](https://github.com/stylehatch/bryant/fork)
+- Clone it: `git clone https://github.com/YOUR-USER/bryant`
 - Run the Jekyll server: `jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
@@ -22,17 +21,17 @@ You should have a server up and running locally at <http://localhost:4000>.
 ## Customization
 
 Next you'll want to change a few things. Most of them can be changed directly in
-[_config.yml](#). That's where we'll pull your name, Twitter username, color variables, and things like that.
+[_config.yml](https://github.com/stylehatch/bryant/blob/master/_config.yml). That's where we'll pull your name, Twitter username, color variables, and things like that.
 
 There's a few other places that you'll want to change, too:
 
-- [CNAME](#): If you're using
+- [CNAME](https://github.com/stylehatch/bryant/blob/master/CNAME): If you're using
   this on GitHub Pages with a custom domain name, you'll want to change this
   to be the domain you're going to use. All that should be in here is a
   domain name on the first line and nothing else (like: `example.com`).
-- [favicon.ico](#): 
+- [favicon.ico](https://github.com/stylehatch/bryant/blob/master/favicon.ico): 
   This is the Style Hatch logo for displaying in the address bar. You should change it to whatever you'd like.
-- [apple-touch-icon.png](#): 
+- [apple-touch-icon.png](https://github.com/stylehatch/bryant/blob/master/apple-touch-icon.png): 
   Again, this is the Style Hatch logo, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
 
@@ -109,7 +108,7 @@ link: http://stylehatch.co/
 ### Shortname
 For long post titles, there is an optional `shortname: ` variable that can be added to the YAML front-matter. If included on a post, the archive page will display the shortname instead of the full title. This is especially useful for long quote posts.
 
-These are mostly specifc to the Byron Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
+These are mostly specifc to the Bryant Jekyll theme. See the Jekyll documentation for [more on adding posts](http://jekyllrb.com/docs/posts/).
 
 ## Creating Pages
 All HTML or Markdown files with YAML front-matter will be parsed as individual pages separate from posts. In order to get these to show up in the main navigation they will need the following YAML front-matter.
